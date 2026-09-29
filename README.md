@@ -1,6 +1,6 @@
-# Data journey artifacts
+# Master Data Atlas
 
-Single-file HTML pages published as Claude Artifacts. Two projects share one engine (JSON model in the page,
+Single-file HTML page published as a Claude Artifact (JSON model in the page,
 generated tabs, inspector, BPMN 2.0 export, automated checks).
 
 | Project | Purpose | Version | Artifact | Source |
@@ -23,10 +23,9 @@ Value case (USD) · Roadmap · How it's built. Details: [reference-model/README.
 
 ```
 
-data-journey/README.md       demo flow, honesty rules, data model
 reference-model/index.html   Master Data Atlas page
 reference-model/README.md    atlas data model
-tests/check.js               automated checks for any page (npm test runs both)
+tests/check.js               automated checks for the page (npm test runs them)
 docs/roadmap.md              what is built, what is next
 docs/decisions.md            decisions and reasons
 docs/original-artifact-analysis.md   how the reference artifact was built
@@ -41,5 +40,5 @@ npm install
 npm test
 ```
 
-For each page: data cross-references resolve, the script parses, every tab (and talk-track step) renders at desktop
+Data cross-references resolve, the script parses, every tab renders at desktop
 and phone width without errors, and each BPMN export is valid. Screenshots go to `tests/out/<page>/`.
